@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="utility\helper.cuh">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\tensor.cuh">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\loss.cuh">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="network\network.cuh">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="layers\activation.cuh">
+      <Filter>Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="layers\conv2d.cuh">
+      <Filter>Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="layers\dense.cuh">
+      <Filter>Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="layers\layer.cuh">
+      <Filter>Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="layers\pooling.cuh">
+      <Filter>Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="layers\softmax.cuh">
+      <Filter>Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="utility\cuda_functions.cuh">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="layers\input.cuh">
+      <Filter>Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="layers\add.cuh">
+      <Filter>Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="layers\concat.cuh">
+      <Filter>Layer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{d15ef8b2-0143-4172-a86f-163fd477b739}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Layer">
+      <UniqueIdentifier>{c0380c28-a0d3-4b3a-9f6b-3d6ad918bc49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network">
+      <UniqueIdentifier>{62878d60-bb78-44f6-8121-8e6473dc191c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="utility\cuda_functions.cu">
+      <Filter>Utility</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>
